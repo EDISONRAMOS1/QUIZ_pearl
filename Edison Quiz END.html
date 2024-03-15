@@ -1,0 +1,173 @@
+<html>
+<head>
+    <title>Pearlyshells Quiz - End</title>
+<link rel="icon" type="image/x-icon" href="Untitled_design-removebg-preview.png">
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: 'Poppins', sans-serif;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .hello {
+            background: white;
+            width: 90%;
+            max-width: 600px;
+            margin: 100px auto 0;
+            border-radius: 30px;
+            padding: 30px;
+        }
+
+        .hello #p {
+            border-bottom: 1px solid #333;
+            padding-bottom: 5px;
+        }
+
+        .loe {
+            padding: 20px 0;
+        }
+
+        .loe p {
+            font-size: 24px;
+            color: #000000;
+        }
+
+        .butones {
+            font-family: 'Poppins', sans-serif;
+            font-size: 18px;
+            background: white;
+            color: black;
+            font-weight: 500;
+            border: 1px solid #222;
+            padding: 10px;
+            margin: 10px 0;
+            text-align: center;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: all 0.8s;
+        }
+
+        .butones:hover {
+            background: #D1D1D9;
+            color: black;
+        }
+
+         #again {
+            font-family: 'Poppins', sans-serif;
+            font-size: 18px;
+            background: #CCBDCF;
+            color: black;
+            font-weight: 500;
+            width: 100px;
+            border: 1px solid #222;
+            padding: 10px;
+            margin: 10px 0;
+            text-align: center;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: all 0.5s;
+        }
+
+#back {
+            font-family: 'Poppins', sans-serif;
+            font-size: 18px;
+            background: #CCBDCF;
+            color: black;
+            font-weight: 500;
+            width: 100px;
+            border: 1px solid #222;
+            padding: 10px;
+            margin: 10px 0;
+            text-align: center;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: all 0.5s;
+        }
+
+#home {
+            font-family: 'Poppins', sans-serif;
+            font-size: 18px;
+            background: #CCBDCF;
+            color: black;
+            font-weight: 500;
+            width: 100px;
+            border: 1px solid #222;
+            padding: 10px;
+            margin: 10px 0;
+            text-align: center;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: all 0.5s;
+        }
+
+        #again:hover {
+            background: #A68CAB;
+            color: black;
+        }
+
+        #home:hover {
+            background: #A68CAB;
+            color: black;
+        }
+
+        #back:hover {
+            background: #A68CAB;
+            color: black;
+        }
+
+       .hidden {
+            display: none;
+        }
+
+        .visible {
+            display: block;
+        }
+
+        .gif-gift {
+            text-align: center;
+        }
+    </style>
+</head>
+<body background="bg.png">
+<center>
+    <div class="hello">
+<img src="C:\Users\admin\Downloads\PNSW_ICT_PT\Untitled_design-removebg-preview.png" width="75px"><br>
+        <h1>The Official PEARLYSHELLS Quiz</h1>
+<div class="arr"> <b><p> All Rights Reserved 2024 | Copyright | <a href='https://www.facebook.com/edison.ramos.2844'>Edison Ramos</a></p></b><br><hr></div>
+
+        <div class="loe">
+           Yaay! Looks like you've made it! Want to play again, or want to have a gift for your amazing hard work in completing the quiz?<br><br>
+        
+         <div class="gif-gift hidden" id="gifContainer">
+            <img src="ezgif-5-4a49ec7267.gif" width="400px" style="border-radius:20px;"><br><br>
+            <audio id="giftAudio" src="m2-res_720p.mp3" loop></audio>
+        </div>
+
+        <button id="back" onclick="showGift()">🎁</button>
+        <a href="Edison Quiz Q1.html"><button id="again" style="width:40%">PLAY AGAIN</button></a>
+        <a href="Edison Quiz START.html"><button id="home">🏡</button></a>
+    </div>   
+
+    <script>
+        var giftAudio = document.getElementById('giftAudio');
+
+        function showGift() {
+            var gifContainer = document.getElementById('gifContainer');
+            gifContainer.classList.remove('hidden');
+            giftAudio.play();
+        }
+    </script>
+
+</center>
+<br><br><br><br><br>
+</body>
+</html>
+ 

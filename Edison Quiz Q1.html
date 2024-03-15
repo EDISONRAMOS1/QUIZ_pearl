@@ -1,0 +1,182 @@
+<html>
+<head>
+    <title>Pearlyshells Quiz - Question 1</title>
+<link rel="icon" type="image/x-icon" href="Untitled_design-removebg-preview.png">
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: 'Poppins', sans-serif;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .hello {
+            background: white;
+            width: 90%;
+            max-width: 600px;
+            margin: 100px auto 0;
+            border-radius: 30px;
+            padding: 30px;
+        }
+
+        .hello #p {
+            border-bottom: 1px solid #333;
+            padding-bottom: 5px;
+        }
+
+        .loe {
+            padding: 20px 0;
+        }
+
+        .loe p {
+            font-size: 24px;
+            color: #000000;
+        }
+
+        .butones {
+            font-family: 'Poppins', sans-serif;
+            font-size: 18px;
+            background: white;
+            color: black;
+            font-weight: 500;
+            border: 1px solid #222;
+            padding: 10px;
+            margin: 10px 0;
+            text-align: center;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: all 0.8s;
+        }
+
+        .butones:hover {
+            background: #D1D1D9;
+            color: black;
+        }
+
+        #next {
+            font-family: 'Poppins', sans-serif;
+            font-size: 18px;
+            background: #CCBDCF;
+            color: black;
+            font-weight: 500;
+            width: 100px;
+            border: 1px solid #222;
+            padding: 10px;
+            margin: 10px 0;
+            text-align: center;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: all 0.5s;
+     display: none;
+        }
+
+#back {
+            font-family: 'Poppins', sans-serif;
+            font-size: 18px;
+            background: #CCBDCF;
+            color: black;
+            font-weight: 500;
+            width: 100px;
+            border: 1px solid #222;
+            padding: 10px;
+            margin: 10px 0;
+            text-align: center;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: all 0.5s;
+     display: none;
+        }
+
+#home {
+            font-family: 'Poppins', sans-serif;
+            font-size: 18px;
+            background: #CCBDCF;
+            color: black;
+            font-weight: 500;
+            width: 100px;
+            border: 1px solid #222;
+            padding: 10px;
+            margin: 10px 0;
+            text-align: center;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: all 0.5s;
+     display: none;
+        }
+
+        #next:hover {
+            background: #A68CAB;
+            color: black;
+        }
+
+        #home:hover {
+            background: #A68CAB;
+            color: black;
+        }
+
+        #back:hover {
+            background: #A68CAB;
+            color: black;
+        }
+
+    </style>
+</head>
+<body background="bg.png">
+<center>
+    <div class="hello">
+<img src="C:\Users\admin\Downloads\PNSW_ICT_PT\Untitled_design-removebg-preview.png" width="75px"><br>
+        <h1>The Official PEARLYSHELLS Quiz</h1>
+<div class="arr"> <b><p> All Rights Reserved 2024 | Copyright | <a href='https://www.facebook.com/edison.ramos.2844'>Edison Ramos</a></p></b><br><hr></div>
+
+        <div class="loe">
+            
+<img src="q1 photo.png" width="400px"><br><br>
+            <p style="font-size:20px;">There are 18 boys and 15 girls in the section Pearl. <b>Which of them is G6?</b></p><br>
+                <button class="butones" onclick="wrong(this)" style="width:100%;">Anneka Mae DC. De Lara</button>
+                <button class="butones" onclick="wrong(this)" style="width:100%;">Cara Marinella V. Sta. Romana</button>
+                <button class="butones" onclick="wrong(this)" style="width:100%;">Mikaella Rohan B. Aves</button>
+                <button class="butones" onclick="wrong(this)" style="width:100%;">Micah Lui Jael H. Dayao</button>
+		<button class="butones" onclick="right(this)" style="width:100%;">Bianca Jeyan A. Dela Cruz</button>
+<br>
+
+
+<button id="next" onclick="nextQuestion()">⬅️</button>
+<a href="Edison Quiz START.html"><button id="home" onclick="nextQuestion()">🏡</button></a>
+<a href="Edison Quiz Q2.html"><button id="back" onclick="nextQuestion()">➡️</button></a>
+
+<script>
+var correctSound = new Audio("omg_right.m4a"); 
+var wrongSound = new Audio("wrong.m4a"); 
+
+            function right(btn) {
+                btn.style.backgroundColor = "#5CED73";
+                alert('Correct! You earn a spectacular point to heaven dear! 😇');
+                correctSound.play();
+document.getElementById('next').style.display = 'inline-block'; 
+document.getElementById('home').style.display = 'inline-block'; 
+document.getElementById('back').style.display = 'inline-block'; 
+            }
+
+            function wrong(btn) {
+                btn.style.backgroundColor = "#FFA590";
+                alert('Wrong! Try again or else, he is going to... you know...😈');
+		wrongSound.play();
+document.getElementById('next').style.display = 'inline-block'; 
+document.getElementById('home').style.display = 'inline-block'; 
+document.getElementById('back').style.display = 'inline-block'; 
+            }
+
+        </script>   
+
+    </div>
+</center>
+<br><br><br><br><br>
+</body>
+</html>
